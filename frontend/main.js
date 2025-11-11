@@ -1,3 +1,5 @@
+
+
 const saboresContainer = document.getElementById("sabores");
 const productosContainer = document.getElementById("productos");
 const nombreInput = document.getElementById("nombre");
@@ -6,6 +8,8 @@ const cantGustosSelect = document.getElementById("cantGustos");
 const saboresRestantes = document.getElementById("saboresRestantes");
 const hacerPedido = document.getElementById("hacerPedido");
 const popup = document.getElementById("popup");
+const show = document.getElementById("show");
+const list = document.getElementById("list");
 let productosDisponibles;
 let saboresSeleccionados = [];
 
@@ -104,6 +108,7 @@ function enviarPedido() {
 }
 
 saboresContainer.addEventListener("click", clickSabor);
+show.addEventListener("click", mostrar);
 
 productoSelect.addEventListener("change", actualizarCantGustos);
 
@@ -133,3 +138,23 @@ getEvent("productos", (productos) => {
   }
   actualizarCantGustos();
 });
+
+function mostrar(){
+  getEvent("lista", (pedidos) => {
+    for (let i = 0; i < pedidos.length; i++) {
+    const pedido = pedidos[i];
+
+    const nombre = pedido.nombre;
+    const producto = pedido.producto;
+    const sabor = pedido.sabores;
+    const div = document.createElement("div");
+    div.innerHTML = `
+  <strong>Pedido nro ${i + 1}</strong><br>
+  Cliente: ${nombre}<br>
+  Producto: ${producto} de ${sabor}
+`;
+    list.appendChild(div);
+    }
+  
+  })
+}

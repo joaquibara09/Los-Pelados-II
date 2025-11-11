@@ -1,0 +1,24 @@
+{
+  "name": "los-pelados-ii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JZylber/Los-Pelados-II.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JZylber/Los-Pelados-II/issues"
+  },
+  "homepage": "https://github.com/JZylber/Los-Pelados-II#readme",
+  "keywords": [],
+  "dependencies": {
+    "soquetic": "^1.4.2"
+  }
+}

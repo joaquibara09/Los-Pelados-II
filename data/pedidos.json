@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "producto": "vasito",
+    "sabores": [
+      "Chocolate Amargo",
+      "Chocolate Blanco"
+    ],
+    "nombre": "joaquin baranek"
+  },
+  {
+    "producto": "1/4 kilo",
+    "sabores": [
+      "Ferrero Rocher",
+      "Chocolate Suizo",
+      "Chocolate"
+    ],
+    "nombre": "Manu"
+  }
+]
