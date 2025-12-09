@@ -1,3 +1,18 @@
 [
-  
+  {
+    "producto": "cucurucho",
+    "sabores": [
+      "Chocolate",
+      "Chocolate Amargo"
+    ],
+    "nombre": "joaquin"
+  },
+  {
+    "producto": "cucurucho",
+    "sabores": [
+      "Tiramisú",
+      "Tramontana"
+    ],
+    "nombre": "lu"
+  }
 ]
